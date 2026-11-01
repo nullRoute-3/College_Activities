@@ -32,3 +32,33 @@ You will need to determine how many months it will take given the following info
 - If the number of months your program returns is off by one, reread the highlighted text above.
 - Assume that users enter valid inputs (e.g., no string inputs when expecting a float).
 - Your program should print outputs in the same format as the test cases below. If you're using Spyder, you might see extra lines in between outputs. Don't worry about them!
+
+# Part B: Saving with a Raise
+
+In Part A, we assumed that your salary did not change over time. However, as an MIT graduate, you are going to be worth more to your company over time! In this part, we build on your solution from Part A by adding a salary raise every six months. Copy over your solution from Part A into the corresponding sections in `ps1b.py`.
+
+## User Inputs
+There is one additional user input in Part B. Remember to cast these inputs as floats and collect them in the following order before declaring other variables:
+
+1. **`yearly_salary`**: The starting yearly salary.
+2. **`portion_saved`**: The portion of salary to be saved.
+3. **`cost_of_dream_home`**: The cost of your dream home.
+4. **`semi_annual_raise`**: The semi-annual salary raise, which is a decimal percentage (e.g., `0.1` for 10%).
+
+## Writing the Program
+Write a program to calculate how many months it will take for you to save up for a down payment. You can reuse much of the code from Part A. 
+
+* Assume that your investments earn an annual rate of return $r = 0.05$ (or 5%).
+* Assume `portion_down_payment = 0.25` (or 25%).
+* `yearly_salary` increases by `semi_annual_raise` at the end of every six months.
+
+## Output
+* Store the number of months required to save up for your down payment using a variable called `months`.
+
+## Notes
+* The investment amount used to calculate the monthly return is the amount you had saved at the start of each month.
+* Be careful about values that represent annual amounts versus monthly amounts.
+* Raises should only happen at the end of the 6th, 12th, 18th month, and so on.
+* If the number of months your program returns is off by one, double-check when your raises are being applied.
+* Assume that users enter valid inputs (e.g., no string inputs when expecting a float).
+* Your program should print outputs in the same format as the test cases.
